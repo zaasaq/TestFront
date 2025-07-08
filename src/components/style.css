@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* En-tête */
+.header {
+  margin-bottom: 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.microsoft-logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2px;
+  width: 40px;
+  height: 40px;
+}
+
+.logo-square {
+  width: 18px;
+  height: 18px;
+}
+
+.logo-square.orange {
+  background-color: #f25022;
+}
+
+.logo-square.green {
+  background-color: #7fba00;
+}
+
+.logo-square.blue {
+  background-color: #00a4ef;
+}
+
+.logo-square.yellow {
+  background-color: #ffb900;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.2;
+}
+
+/* Message de succès */
+.success-message {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  padding: 20px 0;
+}
+
+.success-icon {
+  flex-shrink: 0;
+}
+
+.success-content h2 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.success-content p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Carte de politique de confidentialité */
+.privacy-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+}
+
+.privacy-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.shield-icon {
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.privacy-header h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.3;
+}
+
+.privacy-content {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.privacy-content p {
+  margin-bottom: 20px;
+}
+
+.privacy-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .success-content h2 {
+    font-size: 24px;
+  }
+
+  .privacy-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .privacy-header h3 {
+    font-size: 20px;
+  }
+
+  .privacy-card {
+    padding: 20px;
+  }
+}
+/* Animation de fade-in */
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animation slide-up pour le bloc succès */
+.slide-up {
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUp 1s ease-out forwards;
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animation slide-up pour le bloc succès */
+.slide-up {
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUp 1s ease-out forwards;
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
