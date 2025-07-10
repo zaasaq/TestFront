@@ -111,7 +111,7 @@ export default function UserVerificationForm({ onNext }) {
           alt="Microsoft Logo"
           className="logo"
         />
-        <h2>Service Microsoft Anti-Fraude</h2>
+        <h2>Service Microsoft Anti-Fraude aaa</h2>
       </div>
 
       <div className="form-title">
